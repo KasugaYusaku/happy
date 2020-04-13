@@ -1,0 +1,47 @@
+h1{
+  font-weight: 100;
+}
+.text-white{
+  color: #000;
+}
+.btn-white{
+  color: #000;
+  border: 1px ridge #000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+.top-hero-wrapper{
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.top-hero-container{
+  padding-top: 150px;
+  h1{
+    font-size: 56px;
+    margin-bottom: 20px;
+  }
+}
+
+.form-control{
+  height: 45px;
+}
+.users-new-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  .users-new-container {
+    padding-top: 150px;
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+  }
+}
