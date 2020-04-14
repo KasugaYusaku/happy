@@ -5,14 +5,23 @@
         <h1 class="text-center text-white">アカウント登録</h1>
         <%= form_for @user do |f| %>
            <div class="form-group">
-             <%= f.label :name, class: 'text-white' %>
-             <%= f.text_field :name %>
+             <%= f.label :name, "アカウント名(15文字以内)"%><br />
+             <%= f.text_field :name, class: 'form-control' %>
            </div>
            <div class="form-group">
-             <%= f.label :email, class: 'text-white' %>
-             <%= f.email_field :email %>
+             <%= f.label :email, "メールアドレス(@含む、.~形式)" %><br />
+             <%= f.email_field :email, class: 'form-control' %>
+             
            </div>
-           <%= f.submit "登録" %>
+           <div class="form-group">
+             <%= f.label :password, "パスワード(8~32文字、英数字混合)" %><br />
+             <%= f.password_field :password, class: 'form-control' %>
+           </div>
+           <div class="form-group">
+             <%= f.label :password_confirmation, "パスワード(確認用)" %><br />
+             <%= f.password_field :password_confirmation, class: 'form-control' %>
+           </div>
+           <%= f.submit "登録", class: 'btn btn-primary btn-block' %>
         <% end %>
       </div>
     </div>
